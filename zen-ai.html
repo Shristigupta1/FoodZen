@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Zen AI | FoodyZen</title>
+<link rel="stylesheet" href="zen-ai.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="topbar">
+
+<a href="index.html"><img src="logo.png" class="logo"></a>
+
+<div class="top-right">
+
+<button id="themeBtn"><i class="fa-solid fa-moon"></i></button>
+
+<a href="profile.html"><i class="fa-solid fa-user"></i></a>
+
+</div>
+
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+
+<div class="zen-user">
+
+<img src="zen-small.png">
+
+<h2>Zen AI</h2>
+
+<span>Your Wellness Companion</span>
+
+</div>
+
+<ul>
+
+<li class="active"><i class="fa-solid fa-house"></i>Dashboard</li>
+
+<li><i class="fa-solid fa-face-smile"></i>Mood AI</li>
+
+<li><i class="fa-solid fa-utensils"></i>Recipe AI</li>
+
+<li><i class="fa-solid fa-gamepad"></i>Games</li>
+
+<li><i class="fa-solid fa-seedling"></i>Garden</li>
+
+<li><i class="fa-solid fa-bullseye"></i>Challenges</li>
+
+<li><i class="fa-solid fa-chart-line"></i>Reports</li>
+
+<li><i class="fa-solid fa-gift"></i>Rewards</li>
+
+<li><i class="fa-solid fa-gear"></i>Settings</li>
+
+<li><a href="dashboard.html"><i class="fa-solid fa-arrow-left"></i>Back</a></li>
+
+</ul>
+
+</aside>
+
+<main class="main">
+    <section class="welcome">
+
+<div>
+
+<h1>Welcome Back, Shristi 👋</h1>
+
+<p>Today looks like a healthy day. Let's achieve your goals together.</p>
+
+</div>
+
+<div class="health-score">
+
+<h2>93%</h2>
+
+<span>Health Score</span>
+
+</div>
+
+</section>
+<section class="overview">
+
+<div class="card">
+<i class="fa-solid fa-fire"></i>
+<h3>1650</h3>
+<p>Calories</p>
+<small>Target 2000</small>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-glass-water"></i>
+<h3>2.4L</h3>
+<p>Water</p>
+<small>Goal Completed</small>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-dumbbell"></i>
+<h3>92g</h3>
+<p>Protein</p>
+<small>Excellent</small>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-bed"></i>
+<h3>7.8h</h3>
+<p>Sleep</p>
+<small>Good Recovery</small>
+</div>
+
+</section>
+<section class="grid2">
+
+<div class="challenge">
+
+<div class="title">
+<h2>🎯 Today's Challenge</h2>
+<span>+30 XP</span>
+</div>
+
+<h3>Drink 2L Water</h3>
+
+<div class="progress">
+<div class="bar" id="waterBar"></div>
+</div>
+
+<p>1.4L / 2L Completed</p>
+
+<button id="completeMission">Complete Challenge</button>
+
+</div>
+
+<div class="prediction">
+
+<h2>🔮 Zen Prediction</h2>
+
+<p>
+
+If you continue eating healthy for another <b>5 days</b>, your Health Score will reach
+
+<b>97%</b>.
+
+</p>
+
+<div class="predict-box">
+
+<h4>Next Badge</h4>
+
+<span>🥈 Healthy Hero</span>
+
+</div>
+
+</div>
+
+</section>
+<section class="mood">
+
+<h2>😊 How are you feeling today?</h2>
+
+<div class="mood-grid">
+
+<div class="mood-card happy" data-mood="happy">
+😀
+<span>Happy</span>
+</div>
+
+<div class="mood-card calm" data-mood="calm">
+😌
+<span>Calm</span>
+</div>
+
+<div class="mood-card stress" data-mood="stress">
+😔
+<span>Stressed</span>
+</div>
+
+<div class="mood-card energy" data-mood="energy">
+🔥
+<span>Energetic</span>
+</div>
+
+</div>
+
+<div class="mood-result" id="moodResult">
+
+Select your mood and Zen AI will personalize your experience.
+
+</div>
+
+</section>
+<section class="quick">
+
+<h2>⚡ Quick Actions</h2>
+
+<div class="quick-grid">
+
+<button class="quick-btn" id="recipeBtn">
+<i class="fa-solid fa-utensils"></i>
+<span>Recipe AI</span>
+</button>
+
+<button class="quick-btn" id="gameBtn">
+<i class="fa-solid fa-gamepad"></i>
+<span>Play Games</span>
+</button>
+
+<button class="quick-btn" id="gardenBtn">
+<i class="fa-solid fa-seedling"></i>
+<span>Zen Garden</span>
+</button>
+
+<button class="quick-btn" id="chatBtn">
+<i class="fa-solid fa-robot"></i>
+<span>Ask Zen</span>
+</button>
+
+<button class="quick-btn" id="reportBtn">
+<i class="fa-solid fa-chart-line"></i>
+<span>Weekly Report</span>
+</button>
+
+<button class="quick-btn" id="challengeBtn">
+<i class="fa-solid fa-bullseye"></i>
+<span>Challenges</span>
+</button>
+
+</div>
+
+</section>
+<section class="games">
+
+<div class="title-row">
+
+<h2>🎮 Wellness Games</h2>
+
+<a href="#">View All</a>
+
+</div>
+
+<div class="game-grid">
+
+<div class="game-card" id="healthyCatch">
+
+<div class="emoji">🍎</div>
+
+<h3>Healthy Catch</h3>
+
+<p>Catch healthy food and avoid junk.</p>
+
+<button>Play</button>
+
+</div>
+
+<div class="game-card" id="memoryGame">
+
+<div class="emoji">🧠</div>
+
+<h3>Memory Match</h3>
+
+<p>Match healthy food cards.</p>
+
+<button>Play</button>
+
+</div>
+
+<div class="game-card" id="quizGame">
+
+<div class="emoji">🥗</div>
+
+<h3>Nutrition Quiz</h3>
+
+<p>Answer AI nutrition questions.</p>
+
+<button>Play</button>
+
+</div>
+
+<div class="game-card" id="waterGame">
+
+<div class="emoji">💧</div>
+
+<h3>Water Challenge</h3>
+
+<p>Fill today's water bottle.</p>
+
+<button>Play</button>
+
+</div>
+<div class="game-card" id="luckySpin">
+
+<div class="emoji">🎡</div>
+
+<h3>Lucky Spin</h3>
+
+<p>Spin the wheel and win XP & Coins.</p>
+
+<button>Play</button>
+
+</div>
+
+</div>
+
+</section>
+<section class="chat-section">
+
+<div class="chat-box">
+
+<div class="chat-head">
+
+<img src="zen-small.png">
+
+<div>
+
+<h2>Zen AI Assistant</h2>
+
+<span>Online • Ready to Help</span>
+
+</div>
+
+</div>
+
+<div class="chat-body" id="chatBody">
+
+<div class="bot-msg">
+👋 Hello Shristi! Ask me anything about healthy food, recipes, meal rescue or your goals.
+</div>
+
+</div>
+
+<div class="chat-input">
+
+<input type="text" id="userMsg" placeholder="Ask Zen anything...">
+
+<button id="sendMsg">
+<i class="fa-solid fa-paper-plane"></i>
+</button>
+
+</div>
+
+<div class="quick-chat">
+
+<button>🥗 Healthy Meal</button>
+
+<button>💪 Protein</button>
+
+<button>🍎 Calories</button>
+
+<button>❤️ Donate</button>
+
+<button>🚨 Rescue</button>
+
+<button>🎯 Challenge</button>
+
+</div>
+
+</div>
+
+<div class="recipe-card">
+
+<div class="recipe-top">
+
+<h2>🍽 Today's AI Recipe</h2>
+
+<button id="newRecipe">
+<i class="fa-solid fa-rotate"></i>
+</button>
+
+</div>
+
+<img src="meal-card8.png" id="recipeImg">
+
+<h3 id="recipeTitle">Healthy Power Bowl</h3>
+
+<p id="recipeDesc">
+
+520 Calories • 28g Protein • Fresh Vegetables
+
+</p>
+
+<button id="cookBtn">
+
+Generate Another
+
+</button>
+
+</div>
+
+</section>
+
+<section class="garden">
+
+<div class="garden-card">
+
+<div class="garden-top">
+
+<h2>🌱 Zen Garden</h2>
+
+<span>Level 3</span>
+
+</div>
+
+<img src="garden2.png" id="gardenImg">
+
+<div class="garden-progress">
+
+<div class="garden-bar">
+
+<div class="garden-fill" id="gardenFill"></div>
+
+</div>
+
+<p>65 / 100 Growth Points</p>
+
+</div>
+
+<div class="garden-info">
+
+<div>
+
+<h3>18</h3>
+
+<span>Healthy Meals</span>
+
+</div>
+
+<div>
+
+<h3>6</h3>
+
+<span>Meal Donations</span>
+
+</div>
+
+<div>
+
+<h3>21</h3>
+
+<span>Day Streak</span>
+
+</div>
+
+</div>
+
+<button id="growPlant">
+
+🌿 Grow My Garden
+
+</button>
+
+</div>
+
+</section>
+
+<section class="weekly-report">
+
+<div class="report-card">
+
+<h2>📊 Weekly AI Report</h2>
+
+<div class="report-grid">
+
+<div>
+
+<h3>16</h3>
+
+<p>Healthy Meals</p>
+
+</div>
+
+<div>
+
+<h3>2</h3>
+
+<p>Cheat Meals</p>
+
+</div>
+
+<div>
+
+<h3>18kg</h3>
+
+<p>CO₂ Saved</p>
+
+</div>
+
+<div>
+
+<h3>94%</h3>
+
+<p>Health Score</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+<div class="zen-modal" id="zenModal">
+<div class="zen-box">
+<span id="closeZen">&times;</span>
+<h2 id="zenTitle"></h2>
+<div id="zenContent"></div>
+</div>
+</div>
+
+<script src="zen-ai.js"></script>
+<script src="reward.js"></script>
+<script src="memory.js"></script>
+
+</body>
+</html>

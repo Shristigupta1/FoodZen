@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Share Meal | FoodyZen</title>
+<link rel="stylesheet" href="share-meal.css">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+<a href="dashboard.html"><i class="fa-solid fa-arrow-left"></i></a>
+<h1>❤️ Share Meal</h1>
+<button id="historyBtn"><i class="fa-solid fa-clock-rotate-left"></i></button>
+</header>
+
+<section class="hero">
+<div class="left">
+<h1>Share Food, Spread Happiness 🍱</h1>
+<p>Donate extra food to nearby people, NGOs and shelters.</p>
+<button id="startDonate">Share Now</button>
+</div>
+<div class="right">
+<img src="share-meal.png" alt="">
+</div>
+</section>
+<div class="container">
+
+<div class="left">
+
+<form id="mealForm">
+
+<div class="upload">
+
+<img src="meal-placeholder.png" id="preview">
+
+<input type="file" id="mealImage" accept="image/*">
+
+</div>
+
+<input id="mealName" placeholder="Meal Name">
+
+<div class="row">
+
+<select id="category">
+<option>Breakfast</option>
+<option>Lunch</option>
+<option>Dinner</option>
+<option>Snacks</option>
+</select>
+
+<input id="quantity" type="number" placeholder="Meals">
+
+</div>
+
+<div class="row">
+
+<input id="expiry" type="datetime-local">
+
+<select id="delivery">
+<option>Pickup</option>
+<option>Self Delivery</option>
+</select>
+
+</div>
+
+<input id="address" placeholder="Pickup Address">
+
+<input id="phone" maxlength="10" placeholder="Phone Number">
+
+<select id="receiver">
+
+<option>Nearest NGO</option>
+<option>Old Age Home</option>
+<option>Orphanage</option>
+<option>Homeless Person</option>
+
+</select>
+
+<textarea id="description" rows="4" placeholder="Meal Description"></textarea>
+
+<button id="shareBtn" type="submit">
+
+❤️ Share Meal
+
+</button>
+
+</form>
+
+</div>
+
+<div class="right">
+
+<div class="card">
+
+<h2>🤖 AI Freshness</h2>
+
+<p id="freshness">
+
+Waiting for food details...
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🎁 Rewards</h2>
+
+<h3 id="xp">0 XP</h3>
+
+<h3 id="coins">0 Coins</h3>
+
+</div>
+
+<div class="card">
+
+<h2>📍 Nearby Needs</h2>
+
+<ul>
+
+<li>👵 Old Age Home</li>
+
+<li>👶 Children's Shelter</li>
+
+<li>🏥 Government Hospital</li>
+
+<li>🏠 Community Kitchen</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+<div class="popup" id="successPopup">
+
+<div class="popup-box">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Donation Successful ❤️</h2>
+
+<p id="donationId"></p>
+
+<p>Your meal has been shared successfully.</p>
+
+<div class="popup-btns">
+
+<button id="trackDonation">Track Donation</button>
+
+<button id="closePopup">Done</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="popup" id="historyPopup">
+
+<div class="popup-box history-box">
+
+<div class="title">
+
+<h2>📜 Donation History</h2>
+
+<button id="closeHistory">&times;</button>
+
+</div>
+
+<div id="historyList">
+
+<p>No Donations Yet.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<div>
+
+<h2>❤️ FoodyZen</h2>
+
+<p>Every Meal Has A Purpose.</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="meal-rescue.html">Meal Rescue</a>
+
+<a href="donation.html">Donations</a>
+
+</div>
+
+<div>
+
+<h3>Support</h3>
+
+<p>📧 support@foodyzen.com</p>
+
+<p>📞 +91 9876543210</p>
+
+</div>
+
+</footer>
+
+<script src="share-meal.js"></script>
+
+</body>
+</html>
