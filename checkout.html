@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Checkout | FoodyZen</title>
+<link rel="stylesheet" href="checkout.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+<div class="container">
+<a href="index.html"><img src="logo.png" class="logo"></a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="checkout.html" class="active">Checkout</a></li>
+</ul>
+</nav>
+<a href="meal-details.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
+</div>
+</header>
+
+<section class="checkout">
+<div class="container">
+<div class="checkout-grid">
+
+<div class="left">
+<h2>Delivery Details</h2>
+<input type="text" id="name" placeholder="Full Name">
+<input type="tel" id="phone" placeholder="Phone Number">
+<input type="email" id="email" placeholder="Email">
+<textarea id="address" placeholder="Delivery Address"></textarea>
+
+<h2>Payment</h2>
+<label><input type="radio" name="pay" checked>Cash On Delivery</label>
+<label><input type="radio" name="pay">UPI</label>
+<label><input type="radio" name="pay">Credit Card</label>
+</div>
+
+<div class="right">
+<h2>Order Summary</h2>
+<div id="orderCard"></div>
+<div class="bill">
+<div><span>Subtotal</span><b id="subtotal">₹0</b></div>
+<div><span>Delivery</span><b>₹40</b></div>
+<div><span>GST</span><b>₹20</b></div>
+<div class="total"><span>Total</span><b id="total">₹0</b></div>
+</div>
+<button id="placeOrder">Place Order</button>
+</div>
+
+</div>
+</div>
+</section>
+<div class="zen-ai" id="zenFloat">
+<img src="zen-small.png" alt="">
+<div class="zen-text">
+<h4>Zen AI</h4>
+<p>Ask Me</p>
+</div>
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard | FoodyZen</title>
+<link rel="stylesheet" href="dashboard.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+<div class="container">
+
+<a href="index.html">
+<img src="logo.png" class="logo">
+</a>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="dashboard.html" class="active">Dashboard</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="profile">
+<img src="assets/images/avatar.png" class="avatar">
+<div>
+<h3>Shristi Gupta</h3>
+<p>Premium Member</p>
+</div>
+</div>
+
+</div>
+</header>
+
+<section class="dashboard">
+
+<div class="container">
+
+<div class="welcome">
+
+<div>
+<h1>Welcome Back 👋</h1>
+<p>Track your orders, rewards and favourite meals.</p>
+</div>
+
+<a href="explore.html" class="orderBtn">
+Order Food
+</a>
+
+</div>
+
+<div class="stats">
+
+<div class="card">
+<i class="fa-solid fa-bowl-food"></i>
+<h2>24</h2>
+<p>Total Orders</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-truck-fast"></i>
+<h2>2</h2>
+<p>Active Orders</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-heart"></i>
+<h2>12</h2>
+<p>Favourite Meals</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-star"></i>
+<h2>560</h2>
+<p>Reward Points</p>
+</div>
+
+</div>
+<div class="dashboard-grid">
+
+<div class="orders">
+<h2>Recent Orders</h2>
+
+<div class="order">
+<img src="meal-card8.png">
+<div>
+<h3>Healthy Power Bowl</h3>
+<p>Delivered • ₹249</p>
+</div>
+<span class="status">✓</span>
+</div>
+
+<div class="order">
+<img src="meal-card9.png">
+<div>
+<h3>Protein Bowl</h3>
+<p>On The Way • ₹299</p>
+</div>
+<span class="status pending">🚚</span>
+</div>
+
+<div class="order">
+<img src="meal-card10.png">
+<div>
+<h3>Vegan Salad</h3>
+<p>Delivered • ₹199</p>
+</div>
+<span class="status">✓</span>
+</div>
+
+</div>
+
+<div class="side">
+
+<div class="reward">
+<h2>Reward Points</h2>
+<h1>560</h1>
+<p>Earn more points by ordering healthy meals.</p>
+<a href="explore.html">Redeem Now</a>
+</div>
+
+<div class="address">
+<h2>Saved Address</h2>
+<p><i class="fa-solid fa-location-dot"></i> Saha Chowk, Kharagpur, West Bengal</p>
+</div>
+
+<div class="logout-card">
+<a href="login.html" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 FoodyZen. Every Meal Has A Purpose.</p>
+</footer>
+<div class="zen-ai" id="zenFloat">
+<img src="zen-small.png" alt="">
+<div class="zen-text">
+<h4>Zen AI</h4>
+<p>Ask Me</p>
+</div>
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

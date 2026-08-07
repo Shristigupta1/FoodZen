@@ -1,0 +1,103 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Manrope",sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#FFF8F1,#FFFDFB);
+overflow:hidden;
+height:100vh;
+}
+
+header{
+height:70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 40px;
+background:#fff;
+box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+header a{
+text-decoration:none;
+color:#A56A43;
+font-weight:700;
+font-size:18px;
+}
+
+header h1{
+font-size:34px;
+color:#222;
+}
+
+.score{
+background:#A56A43;
+color:#fff;
+padding:12px 22px;
+border-radius:40px;
+font-size:20px;
+font-weight:700;
+}
+
+.game{
+position:relative;
+width:100%;
+height:calc(100vh - 150px);
+overflow:hidden;
+background:linear-gradient(#FFF8F0,#F9FFF6);
+}
+
+#basket{
+position:absolute;
+bottom:20px;
+left:50%;
+font-size:65px;
+transition:.08s linear;
+user-select:none;
+z-index:100;
+}
+
+.food{
+position:absolute;
+font-size:45px;
+animation:fall linear forwards;
+user-select:none;
+}
+
+.controls{
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+background:#fff;
+}
+
+.controls button{
+border:none;
+padding:14px 28px;
+border-radius:40px;
+background:#A56A43;
+color:#fff;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+}
+
+.controls button:hover{
+transform:translateY(-3px);
+background:#8B5736;
+}
+
+@keyframes fall{
+from{
+top:-60px;
+}
+to{
+top:100%;
+}
+}

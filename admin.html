@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FoodyZen Admin</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<img src="logo.png" class="logo">
+
+<ul>
+
+<li class="active"><i class="fa-solid fa-chart-line"></i> Dashboard</li>
+
+<li><i class="fa-solid fa-bowl-food"></i> Orders</li>
+
+<li><i class="fa-solid fa-hand-holding-heart"></i> Meal Rescue</li>
+
+<li><i class="fa-solid fa-users"></i> Volunteers</li>
+
+<li><i class="fa-solid fa-store"></i> Restaurants</li>
+
+<li><i class="fa-solid fa-user"></i> Users</li>
+
+<li><i class="fa-solid fa-star"></i> Reviews</li>
+
+<li><i class="fa-solid fa-gear"></i> Settings</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<h1>Admin Dashboard</h1>
+
+<div class="admin">
+
+<img src="avatar1.png">
+
+<h3>Admin</h3>
+
+</div>
+
+</header>
+
+<section class="cards">
+    <div class="card">
+<i class="fa-solid fa-cart-shopping"></i>
+<h2 id="orders">0</h2>
+<p>Total Orders</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-hand-holding-heart"></i>
+<h2 id="rescues">0</h2>
+<p>Meal Rescue</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-users"></i>
+<h2 id="volunteers">0</h2>
+<p>Volunteers</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-indian-rupee-sign"></i>
+<h2 id="revenue">0</h2>
+<p>Revenue</p>
+</div>
+
+</section>
+
+<section class="table-section">
+
+<h2>Recent Orders</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Customer</th>
+
+<th>Meal</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="orderTable">
+
+</tbody>
+
+</table>
+
+</section>
+<section class="analytics">
+
+<div class="chart-card">
+<h3>Today's Orders</h3>
+<div class="bar">
+<div id="orderBar"></div>
+</div>
+<p><span id="orderPercent">0%</span> Completed</p>
+</div>
+
+<div class="chart-card">
+<h3>Meal Rescue</h3>
+<div class="bar">
+<div id="rescueBar"></div>
+</div>
+<p><span id="rescuePercent">0%</span> Success</p>
+</div>
+
+<div class="chart-card">
+<h3>Revenue</h3>
+<div class="bar">
+<div id="revenueBar"></div>
+</div>
+<p>₹ <span id="todayRevenue">0</span></p>
+</div>
+
+</section>
+<section class="notifications">
+
+<h2>🔔 Live Notifications</h2>
+
+<div id="notificationList">
+
+<div class="notify">
+🍱 New Order Received
+<span>Just Now</span>
+</div>
+
+</div>
+
+</section>
+<section class="ai-admin">
+
+<h2>🤖 Zen AI Insights</h2>
+
+<div class="ai-card">
+
+<h3 id="aiTitle">
+
+Today's Recommendation
+
+</h3>
+
+<p id="aiText">
+
+Loading...
+
+</p>
+
+<button id="nextInsight">
+
+Next Insight
+
+</button>
+
+</div>
+
+</section>
+<section class="orders-panel">
+
+<h2>📦 Recent Orders</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Order ID</th>
+
+<th>Customer</th>
+
+<th>Meal</th>
+
+<th>Price</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="ordersTable">
+
+<tr>
+
+<td>FZ1025</td>
+
+<td>Shristi</td>
+
+<td>Healthy Bowl</td>
+
+<td>₹249</td>
+
+<td class="pending">Pending</td>
+
+<td>
+
+<button class="accept">Accept</button>
+
+<button class="reject">Reject</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>FZ1026</td>
+
+<td>Rahul</td>
+
+<td>Protein Bowl</td>
+
+<td>₹299</td>
+
+<td class="pending">Pending</td>
+
+<td>
+
+<button class="accept">Accept</button>
+
+<button class="reject">Reject</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+<div class="zen-ai" id="zenFloat">
+<img src="zen-small.png" alt="">
+<div class="zen-text">
+<h4>Zen AI</h4>
+<p>Ask Me</p>
+</div>
+</div>
+
+<script src="admin.js"></script>
+
+</div>
+
+</body>
+
+</html>

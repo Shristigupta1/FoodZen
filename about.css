@@ -1,0 +1,89 @@
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font:500 16px 'Plus Jakarta Sans',sans-serif;background:#fffdf9;color:#222;overflow-x:hidden}a{text-decoration:none;color:inherit}img,video{display:block;max-width:100%}section{padding:90px 8%}.logo{height:58px}
+header{position:fixed;top:0;left:0;width:100%;height:90px;padding:0 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.96);backdrop-filter:blur(15px);box-shadow:0 5px 20px rgba(0,0,0,.05);z-index:999}
+nav{display:flex;gap:38px}nav a{font:600 17px 'Plus Jakarta Sans';position:relative;transition:.3s}nav a:hover,nav .active{color:#B06D42}nav a:after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:3px;background:#B06D42;border-radius:20px;transition:.3s}nav a:hover:after,nav .active:after{width:100%}
+header button{padding:14px 30px;border:0;border-radius:40px;background:#B06D42;color:#fff;font-weight:700;cursor:pointer;transition:.3s}header button:hover{background:#96552f;transform:translateY(-3px)}
+.hero{padding:150px 8% 90px;display:grid;grid-template-columns:42% 58%;gap:70px;align-items:center;min-height:100vh}.hero span{display:inline-block;padding:10px 18px;background:#FFF1E7;color:#B06D42;border-radius:40px;font-weight:700}.hero h1{font:700 78px 'Cormorant Garamond',serif;line-height:1.05;margin:25px 0}.hero p{font-size:20px;line-height:1.8;color:#666;max-width:540px}.btns{display:flex;gap:18px;margin-top:35px}.btns button{padding:16px 34px;border:0;border-radius:45px;font-weight:700;cursor:pointer;background:#B06D42;color:#fff;transition:.3s}.btns .light{background:#FFF1E7;color:#B06D42}.btns button:hover{transform:translateY(-4px)}.hero .right{display:flex;justify-content:flex-end}.hero video{width:100%;height:850px;object-fit:cover;border-radius:40px;box-shadow:0 25px 60px rgba(0,0,0,.12)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.story-text span,.zen-text span{display:inline-block;padding:8px 18px;background:#FFF1E7;color:#B06D42;border-radius:30px;font-weight:700;margin-bottom:18px}
+.story h2,.impact h2,.gallery h2,.zen h2,.timeline h2,.cta h2{font:700 54px 'Cormorant Garamond',serif;margin-bottom:22px}
+.story p,.zen p,.cta p{font-size:18px;line-height:1.9;color:#666}
+.story-img img{width:100%;height:650px;object-fit:cover;border-radius:35px;box-shadow:0 20px 50px rgba(0,0,0,.12);transition:.5s}
+.story-img img:hover{transform:scale(1.03)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.stats div{background:#fff;padding:30px;border-radius:24px;text-align:center;box-shadow:0 12px 35px rgba(0,0,0,.07);transition:.35s}
+.stats div:hover{transform:translateY(-8px)}
+.stats h3{font-size:38px;color:#B06D42;margin-bottom:8px}
+.stats p{font-size:15px;color:#777}
+
+.impact{text-align:center}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:55px}
+.card{background:#fff;padding:45px 25px;border-radius:28px;box-shadow:0 15px 35px rgba(0,0,0,.07);transition:.35s}
+.card:hover{transform:translateY(-10px)}
+.card i{font-size:45px;color:#B06D42;margin-bottom:20px}
+.card h3{font-size:34px;margin-bottom:10px}
+.card p{color:#666;font-size:17px}
+
+.gallery{text-align:center}
+.gallery-grid{columns:3 260px;column-gap:18px;margin-top:45px}
+.gallery-grid img{width:100%;margin-bottom:18px;border-radius:25px;break-inside:avoid;transition:.4s;cursor:pointer}
+.gallery-grid img:hover{transform:scale(1.03)}
+
+.zen{display:grid;grid-template-columns:42% 58%;gap:70px;align-items:center}
+.zen-img img{width:100%;height:650px;object-fit:cover;border-radius:35px;box-shadow:0 20px 45px rgba(0,0,0,.12)}
+.zen ul{margin-top:25px;display:grid;gap:18px;list-style:none}
+.zen li{background:#fff;padding:18px 24px;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.06);font-weight:600}
+.timeline{text-align:center}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:55px}
+.steps div{background:#fff;padding:45px 25px;border-radius:30px;box-shadow:0 15px 35px rgba(0,0,0,.07);position:relative;transition:.35s}
+.steps div:hover{transform:translateY(-10px)}
+.steps span{width:70px;height:70px;background:#B06D42;color:#fff;border-radius:50%;display:grid;place-items:center;font-size:28px;font-weight:700;margin:auto auto 20px}
+.steps h3{font-size:22px}
+
+.mission{text-align:center}
+.mission-card{max-width:900px;margin:auto;background:linear-gradient(135deg,#B06D42,#D89A68);padding:70px;border-radius:40px;color:#fff;box-shadow:0 25px 60px rgba(0,0,0,.12)}
+.mission-card h2{font:700 52px 'Cormorant Garamond',serif;margin-bottom:20px}
+.mission-card p{font-size:19px;line-height:1.9}
+
+.community{text-align:center}
+.community-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}
+.person{background:#fff;padding:25px;border-radius:30px;box-shadow:0 15px 35px rgba(0,0,0,.07);transition:.35s}
+.person:hover{transform:translateY(-10px)}
+.person img{width:100%;height:360px;object-fit:cover;border-radius:22px}
+.person h3{margin:18px 0 8px;font-size:24px}
+.person p{color:#666}
+
+.cta{text-align:center;padding:120px 8%;background:linear-gradient(135deg,#FFF5EC,#FFFDF9)}
+.cta p{max-width:700px;margin:25px auto 40px}
+.cta-btns{display:flex;justify-content:center;gap:20px}
+.cta-btns button{padding:18px 38px;border:0;border-radius:50px;background:#B06D42;color:#fff;font-size:17px;font-weight:700;cursor:pointer;transition:.35s}
+.cta-btns .light{background:#fff;color:#B06D42;border:2px solid #B06D42}
+.cta-btns button:hover{transform:translateY(-5px)}
+
+footer{background:#1F1F1F;color:#fff;padding:80px 8%;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px}
+footer h2{font:700 42px 'Cormorant Garamond',serif;margin-bottom:20px}
+footer h3{margin-bottom:20px}
+footer a,footer p{display:block;color:#ddd;margin:12px 0;line-height:1.8}
+footer a:hover{color:#D89A68}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(50px)}to{opacity:1;transform:translateY(0)}}
+.story,.impact,.gallery,.zen,.timeline,.mission,.community,.cta{animation:fadeUp .8s ease}
+
+@media(max-width:1100px){
+.hero,.story,.zen{grid-template-columns:1fr}
+.hero video,.story-img img,.zen-img img{height:500px}
+.impact-grid,.steps,.community-grid{grid-template-columns:repeat(2,1fr)}
+footer{grid-template-columns:1fr}
+}
+
+@media(max-width:768px){
+header{padding:0 5%}
+nav{display:none}
+.hero{padding-top:130px}
+.hero h1{font-size:52px}
+.story h2,.impact h2,.gallery h2,.zen h2,.timeline h2,.cta h2,.mission-card h2{font-size:42px}
+.hero video,.story-img img,.zen-img img{height:380px}
+.impact-grid,.steps,.community-grid,.stats{grid-template-columns:1fr}
+.gallery-grid{columns:1}
+.btns,.cta-btns{flex-direction:column}
+footer{text-align:center}
+}

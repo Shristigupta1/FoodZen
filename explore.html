@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Explore Meals | FoodyZen</title>
+<link rel="stylesheet" href="explore.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+<div class="container">
+<a href="index.html"><img src="logo.png" class="logo"></a>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html" class="active">Explore</a></li>
+<li><a href="#">Meal Rescue</a></li>
+<li><a href="#">Share Meal</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<div class="nav-btns">
+<a href="profile.html"><i class="fa-solid fa-user"></i></a>
+<button id="cartBtn"><i class="fa-solid fa-cart-shopping"></i><span id="cartCount">0</span></button>
+</div>
+
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+
+<h1>Discover Delicious Meals</h1>
+
+<p>Healthy • Fresh • Affordable • Delivered Fast</p>
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input type="text" id="searchMeal" placeholder="Search meals...">
+
+</div>
+
+<div class="filters">
+
+<button class="filter active">All</button>
+<button class="filter">Healthy</button>
+<button class="filter">Protein</button>
+<button class="filter">Indian</button>
+<button class="filter">Vegan</button>
+<button class="filter">Dessert</button>
+
+</div>
+
+</div>
+</section>
+
+<section class="meals">
+<div class="container">
+<div class="meal-grid">
+    <div class="meal-card" data-name="Healthy Power Bowl" data-price="249" data-rating="4.9" data-image="meal-card8.png" data-desc="Fresh vegetables and quinoa bowl.">
+<span class="badge">AI Choice</span>
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card1.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Healthy Bowl</h3></a>
+<p>Fresh vegetables & quinoa</p>
+<div class="meal-info"><span>⭐4.9</span><span>₹249</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card2.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Protein Bowl</h3></a>
+<p>Chicken & brown rice</p>
+<div class="meal-info"><span>⭐4.8</span><span>₹299</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card3.png">
+<a href="meal-details.html" class="meal-title">
+
+<h3>Vegan Salad</h3></a>
+<p>Fresh organic veggies</p>
+<div class="meal-info"><span>⭐4.7</span><span>₹199</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card4.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Paneer Wrap</h3></a>
+<a href="meal-details.html" class="meal-title">
+<p>High protein wrap</p></a>
+<div class="meal-info"><span>⭐4.8</span><span>₹179</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card5.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Italian Pasta</h3></a>
+<p>Creamy white sauce</p>
+<div class="meal-info"><span>⭐4.9</span><span>₹269</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card6.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Veg Pizza</h3></a>
+<p>Cheesy delight</p>
+<div class="meal-info"><span>⭐4.8</span><span>₹329</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card7.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Fruit Bowl</h3></a>
+<p>Seasonal fresh fruits</p>
+<div class="meal-info"><span>⭐4.9</span><span>₹149</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card8.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Chicken Burger</h3></a>
+<p>Grilled chicken burger</p>
+<div class="meal-info"><span>⭐4.8</span><span>₹229</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card9.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Grilled Fish</h3></a>
+<p>Omega rich meal</p>
+<div class="meal-info"><span>⭐4.9</span><span>₹399</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card10.png">
+<a href="meal-details.html" class="meal-title">
+<h3>South Indian</h3></a>
+<p>Idli & Dosa Combo</p>
+<div class="meal-info"><span>⭐4.7</span><span>₹189</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card11.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Chocolate Cake</h3></a>
+<p>Premium dessert</p>
+<div class="meal-info"><span>⭐4.9</span><span>₹159</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+<div class="meal-card">
+<span class="badge">New</span>
+<i class="fa-regular fa-heart fav"></i>
+<img src="meal-card12.png">
+<a href="meal-details.html" class="meal-title">
+<h3>Smoothie Bowl</h3></a>
+<p>Healthy breakfast</p>
+<div class="meal-info"><span>⭐5.0</span><span>₹219</span></div>
+<button class="cart">Add to Cart</button>
+</div>
+
+</div>
+</div>
+</section>
+<div class="zen-ai" id="zenFloat">
+<img src="zen-small.png" alt="">
+<div class="zen-text">
+<h4>Zen AI</h4>
+<p>Ask Me</p>
+</div>
+</div>
+
+<script src="explore.js"></script>
+</body>
+</html>
