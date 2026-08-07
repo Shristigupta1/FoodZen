@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Settings | FoodyZen</title>
+
+<link rel="stylesheet" href="settings.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<a href="dashboard.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
+
+<h1>⚙ Settings</h1>
+
+</header>
+
+<div class="settings">
+
+<div class="item">
+<span>🌙 Dark Mode</span>
+<label class="switch">
+<input type="checkbox" id="darkMode">
+<span class="slider"></span>
+</label>
+</div>
+
+<div class="item">
+<span>🔔 Notifications</span>
+<label class="switch">
+<input type="checkbox" id="notify" checked>
+<span class="slider"></span>
+</label>
+</div>
+
+<div class="item">
+<span>🔊 Sound</span>
+<label class="switch">
+<input type="checkbox" id="sound" checked>
+<span class="slider"></span>
+</label>
+</div>
+
+<div class="item">
+<span>🌍 Language</span>
+
+<select id="language">
+
+<option>English</option>
+
+<option>Hindi</option>
+
+</select>
+
+</div>
+
+<div class="item">
+<button id="clearData">🗑 Clear App Data</button>
+</div>
+
+<div class="item">
+<button id="logout">🚪 Logout</button>
+</div>
+
+</div>
+
+<script src="settings.js"></script>
+
+</body>
+</html>

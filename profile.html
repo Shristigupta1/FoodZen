@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Profile | FoodyZen</title>
+<link rel="stylesheet" href="profile.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+<div class="container">
+<a href="index.html"><img src="logo.png" class="logo"></a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="meal-rescue.html">Meal Rescue</a></li>
+<li><a href="share-meal.html">Share Meal</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="nav-icons">
+<a href="dashboard.html" title="Dashboard"><i class="fa-solid fa-chart-simple"></i></a>
+<a href="cart.html" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+</div>
+</header>
+
+<section class="profile-hero">
+<div class="container">
+<div class="profile-card">
+<div class="profile-left">
+<img src="profile.png" class="profile-img">
+<div>
+<h1>Shristi Gupta</h1>
+<p class="member">🌱 Starter Member</p>
+<span>Complete 5 orders to unlock Food Friend</span>
+</div>
+</div>
+<div class="profile-right">
+<button id="editProfile"><i class="fa-solid fa-pen"></i>Edit Profile</button>
+</div>
+</div>
+</div>
+</section>
+
+<script src="profile.js"></script>
+</body>
+</html>
+<section class="profile-stats">
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<i class="fa-solid fa-star"></i>
+<h2 id="points">120</h2>
+<p>Reward Points</p>
+</div>
+
+<div class="stat-card">
+<i class="fa-solid fa-utensils"></i>
+<h2 id="orders">8</h2>
+<p>Total Orders</p>
+</div>
+
+<div class="stat-card">
+<i class="fa-solid fa-heart"></i>
+<h2 id="shared">3</h2>
+<p>Meals Shared</p>
+</div>
+
+<div class="stat-card">
+<i class="fa-solid fa-leaf"></i>
+<h2 id="saved">12kg</h2>
+<p>CO₂ Saved</p>
+</div>
+
+</div>
+
+<div class="membership">
+
+<div class="member-head">
+<h2>Membership Progress</h2>
+<span id="level">🌱 Starter</span>
+</div>
+
+<div class="progress">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+<div class="progress-info">
+<span>120 / 300 Points</span>
+<span>Next : 🥉 Food Friend</span>
+</div>
+
+</div>
+
+</div>
+</section>
+<section class="health">
+<div class="container">
+
+<div class="health-card">
+
+<div class="health-left">
+
+<h2><i class="fa-solid fa-robot"></i> Zen AI Health Summary</h2>
+
+<p id="healthMsg">Great job! You've made healthier meal choices this week.</p>
+
+<div class="health-score">
+
+<div class="circle">
+<h1 id="score">92%</h1>
+<span>Healthy Score</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="health-right">
+
+<div class="health-box">
+<i class="fa-solid fa-fire"></i>
+<h3>1450</h3>
+<p>Calories</p>
+</div>
+
+<div class="health-box">
+<i class="fa-solid fa-drumstick-bite"></i>
+<h3>92g</h3>
+<p>Protein</p>
+</div>
+
+<div class="health-box">
+<i class="fa-solid fa-glass-water"></i>
+<h3>2.3L</h3>
+<p>Water</p>
+</div>
+
+<div class="health-box">
+<i class="fa-solid fa-heart-pulse"></i>
+<h3>Excellent</h3>
+<p>Health</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+<section class="achievements">
+<div class="container">
+
+<h2>Achievements</h2>
+
+<div class="badge-grid">
+
+<div class="badge-card active">
+<div class="badge-icon">🌱</div>
+<h3>Starter</h3>
+<p>Unlocked</p>
+</div>
+
+<div class="badge-card">
+<div class="badge-icon">🥉</div>
+<h3>Food Friend</h3>
+<p>5 Orders</p>
+</div>
+
+<div class="badge-card">
+<div class="badge-icon">🥈</div>
+<h3>Healthy Hero</h3>
+<p>15 Orders</p>
+</div>
+
+<div class="badge-card">
+<div class="badge-icon">🥇</div>
+<h3>Zen Gold</h3>
+<p>30 Orders</p>
+</div>
+
+</div>
+
+<h2 class="recent-title">Recent Orders</h2>
+
+<div class="recent-orders">
+
+<div class="order-card">
+<img src="meal-card8.png">
+<div>
+<h4>Healthy Bowl</h4>
+<span>₹249 • Delivered</span>
+</div>
+</div>
+
+<div class="order-card">
+<img src="meal-card11.png">
+<div>
+<h4>Paneer Wrap</h4>
+<span>₹179 • Delivered</span>
+</div>
+</div>
+
+<div class="order-card">
+<img src="meal-card10.png">
+<div>
+<h4>Vegan Salad</h4>
+<span>₹199 • Delivered</span>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+<section class="profile-bottom">
+<div class="container">
+
+<div class="bottom-grid">
+
+<div class="info-card">
+
+<h2>Personal Information</h2>
+
+<div class="info-row">
+<span>Full Name</span>
+<b>Shristi Gupta</b>
+</div>
+
+<div class="info-row">
+<span>Email</span>
+<b>shristi646@gmail.com</b>
+</div>
+
+<div class="info-row">
+<span>Phone</span>
+<b>+91 9876543210</b>
+</div>
+
+<div class="info-row">
+<span>Location</span>
+<b>Kolkata, India</b>
+</div>
+
+<button id="editProfileBtn">
+<i class="fa-solid fa-user-pen"></i>
+Edit Profile
+</button>
+
+</div>
+
+<div class="action-card">
+
+<h2>Quick Actions</h2>
+
+<a href="dashboard.html">
+<i class="fa-solid fa-chart-simple"></i>
+Dashboard
+</a>
+
+<a href="order-history.html">
+<i class="fa-solid fa-bag-shopping"></i>
+Order History
+</a>
+
+<a href="nutrition.html">
+<i class="fa-solid fa-heart-pulse"></i>
+Nutrition AI
+</a>
+
+<a href="share-meal.html">
+<i class="fa-solid fa-hand-holding-heart"></i>
+Share a Meal
+</a>
+
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+
+<button id="logoutBtn">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</button>
+
+</div>
+
+</div>
+
+</div>
+</section>
+<div class="zen-float" id="zenFloat">
+<img src="zen.png" alt="">
+<span>Zen AI</span>
+<div class="zen-dot"></div>
+</div>
+<script src="profile.js"></script>
+</body>
+</html>

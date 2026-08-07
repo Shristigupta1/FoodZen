@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Meal Details | FoodyZen</title>
+<link rel="stylesheet" href="meal-details.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+<div class="container">
+<a href="index.html"><img src="logo.png" class="logo"></a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="#" class="active">Meal Details</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class="nav-btns">
+<a href="dashboard.html"><i class="fa-solid fa-user"></i></a>
+<button><i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+</div>
+</header>
+
+<section class="meal-details">
+<div class="container">
+<div class="meal-wrapper">
+
+<div class="meal-gallery">
+
+<div class="main-image">
+<img src="meal-card1.png" id="mainMeal">
+</div>
+
+<div class="thumbs">
+
+<img src="meal-card1.png" class="thumb active">
+
+<img src="meal-card2.png" class="thumb">
+
+<img src="meal-card3.png" class="thumb">
+
+<img src="meal-card4.png" class="thumb">
+
+</div>
+
+</div>
+
+<div class="meal-content">
+
+<span class="tag">AI Recommended</span>
+
+<h1>Healthy Power Bowl</h1>
+
+<div class="rating">
+
+⭐ 4.9 (2,456 Reviews)
+
+</div>
+
+<h2>₹249</h2>
+
+<p>
+
+A healthy combination of quinoa, grilled vegetables, avocado, fresh greens and protein-rich ingredients specially curated by Zen AI.
+
+</p>
+<a href="explore.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i> Back to Explore
+</a>
+
+<div class="nutrition">
+
+<div><h3>520</h3><span>Calories</span></div>
+
+<div><h3>28g</h3><span>Protein</span></div>
+
+<div><h3>42g</h3><span>Carbs</span></div>
+
+<div><h3>15g</h3><span>Fat</span></div>
+
+</div>
+
+<div class="quantity">
+
+<button id="minus">-</button>
+
+<input type="text" value="1" id="qty" readonly>
+
+<button id="plus">+</button>
+
+</div>
+
+<div class="buttons">
+
+<button id="cartBtn">Add To Cart</button>
+
+<button id="buyBtn">Buy Now</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+<div class="zen-ai" id="zenFloat">
+<img src="zen-small.png" alt="">
+<div class="zen-text">
+<h4>Zen AI</h4>
+<p>Ask Me</p>
+</div>
+</div>
+
+<script src="meal-details.js"></script>
+
+</body>
+</html>

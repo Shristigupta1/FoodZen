@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Nutrition Planner | FoodyZen</title>
+<link rel="stylesheet" href="nutrition.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+<div class="container">
+<a href="index.html"><img src="logo.png" class="logo"></a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="nutrition.html" class="active">Nutrition AI</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+</nav>
+<a href="dashboard.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
+</div>
+</header>
+
+<section class="planner">
+<div class="container">
+
+<div class="hero">
+<h1>Zen AI Nutrition Planner</h1>
+<p>Tell Zen your goal and receive a personalized meal recommendation.</p>
+</div>
+
+<div class="planner-box">
+
+<select id="goal">
+<option value="">Choose Your Goal</option>
+<option>Weight Loss</option>
+<option>Muscle Gain</option>
+<option>Healthy Lifestyle</option>
+<option>High Protein</option>
+<option>Low Carb</option>
+</select>
+
+<button id="generatePlan">Generate Meal Plan</button>
+
+</div>
+
+<div id="result"></div>
+<section class="features">
+
+<div class="feature">
+<i class="fa-solid fa-fire"></i>
+<h3>Daily Calories</h3>
+<p id="calories">-- kcal</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-drumstick-bite"></i>
+<h3>Protein</h3>
+<p id="protein">-- g</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-bowl-rice"></i>
+<h3>Carbs</h3>
+<p id="carbs">-- g</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-droplet"></i>
+<h3>Water Intake</h3>
+<p id="water">-- L</p>
+</div>
+
+</section>
+
+<section class="day-plan">
+
+<h2>Today's Meal Plan</h2>
+
+<div class="plan-grid">
+
+<div class="meal">
+<h3>🍳 Breakfast</h3>
+<p id="breakfast">--</p>
+</div>
+
+<div class="meal">
+<h3>🥗 Lunch</h3>
+<p id="lunch">--</p>
+</div>
+
+<div class="meal">
+<h3>🍎 Snacks</h3>
+<p id="snacks">--</p>
+</div>
+
+<div class="meal">
+<h3>🍽️ Dinner</h3>
+<p id="dinner">--</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+</section>
+<div class="zen-ai" id="zenFloat">
+<img src="zen-small.png" alt="">
+<div class="zen-text">
+<h4>Zen AI</h4>
+<p>Ask Me</p>
+</div>
+</div>
+
+<script src="nutrition.js"></script>
+</body>
+</html>
